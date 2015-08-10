@@ -7,7 +7,63 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav class="menu">
+    <ul >
+      <li ><img src="<%= image_path('light_logo.png') %>" width="70px" alt="Klov"></li>
+      <li class="current"><a href="#hero">Home</a></li>
+      <li><a href="#what-we-do">¿que hacemos?</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#subscribe-section">Inscribete</a></li>
+    </ul>
+  </nav>
 
+
+  <main id="main-content" class="creative-layout" style="margin-bottom: 234px;"> <!-- margin value is the height of your footer -->
+
+    <!--
+    ========================
+    == BEGIN HERO SECTION ==
+    ========================
+    -->
+    <section id="hero">
+
+      <div class="container">
+
+        <div class="vertical-center-wrapper">
+          <div class="vertical-center-table">
+            <div class="vertical-center-content">
+
+              <!-- BEGIN Hero Content -->
+              <div class="hero-content row centered">
+                <div class="col-lg-6 col-sm-12">
+
+                  <p class="lead all-caps text-shadow-small margin-bot-5" data-sr="enter bottom over 1s and move 50px wait 0.4s">Dale alas a tu Idea</p>
+
+                  <h1 class="all-caps animated-headline slide" data-sr="enter bottom over 1s and move 50px wait 0.3s">
+                    <span class="animated-words-wrapper">
+                      <b class="is-visible">Websites</b>
+                      <b>Aplicativos</b>
+                      <b>Diseño de marca</b>
+                    </span>
+                  </h1>
+
+
+                  <!--/ .inline-cta -->
+
+                    <a href="#what-we-do" class="scroll-to scroll-link"><span class="icon-chevron-thin-down" data-sr="enter top top 1s and move 50px wait 0.3s"></span></a>
+
+                </div> <!--/ .col-lg-12 -->
+              </div> <!--/ .row -->
+              <!-- END Hero Content -->
+
+            </div> <!--/ .vertical-center-content -->
+          </div> <!--/ .vertical-center-table -->
+        </div> <!-- / .vertical-center-wrapper -->
+
+      </div> <!--/ .container -->
+
+    </section>
+  </main>
 <%= yield %>
 
 </body>

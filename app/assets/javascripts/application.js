@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require urip
+//= require SmoothScroll.min
+//= require scrollReveal
+//= require jquery.nav
+//= require klov
+//= require expandableNav
+//= require bootstrap-sprockets
 //= require_tree .
